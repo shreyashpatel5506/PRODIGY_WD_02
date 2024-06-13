@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>StopWatch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="index.js" defer="defer"></script>
+       <div class="main">
+            <div class="time">
+                <div class="start"><button onclick="start()"><img src="offpower.png" id="power"></button></div>
+                <div class="stop"><button onclick="stop()"><img src="pausered.png" id="play"></button></div>
+                <div class="reset"><button onclick="reset()"><img src="reset.png" id="reset"></button></div>
+                <div class="lap"><button onclick="lap()"><img src="plus.png"></button></div>
+                
+                <div class="display">
+                    <span class="digit" id="hour">0</span>
+                    <span class="digit" id="min">0</span>
+                </div>
+                <div class="display1">
+                    <span class="digit" id="sec">0</span>
+                    <span class="digit" id="mini">0</span>
+                 </div>
+            </div>
+            <div class="demo" id="de"></div>
+            
+        </div>
+    </body>
+</html>

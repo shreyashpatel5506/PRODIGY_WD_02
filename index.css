@@ -1,0 +1,341 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCnFqpWGTwTov10t5Y01ZMNBKbfSqppHPxw&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-top:15px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+
+}
+button{
+    cursor: pointer;
+}
+.border{
+    display: none;
+}
+.time{
+    width:350px;
+    height:350px;
+    border-radius: 50%;
+    border: 35px solid black;
+    position: relative;
+    margin-top: 50px;
+}
+.display{
+    position: absolute;
+    top: 20px;
+    left: 27%;
+    font-size:125px;
+}
+.display1{
+    position: absolute;
+    bottom: 68px;
+    left: 50%;
+    font-size: 52px;
+    transform: translateX(-50%);
+}
+.start{
+    width:50px;
+    height:50px;
+    position: absolute;
+    left: 90%;
+    top: -14px;
+    transform: rotate(135deg);
+}
+.start button{
+    background-color: black;
+    border: none;
+    border-radius: 25%;
+}
+.start img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    transform: rotate(270deg);
+}
+.stop{
+    width:50px;
+    height:50px;
+    position: absolute;
+    left: 106%;
+    top: 86px;
+    transform: rotate(136deg);
+}
+.stop button{
+    background-color: black;
+    border: none;
+    border-radius: 25%;
+}
+.stop img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    transform: rotate(270deg);
+}
+.reset{
+    width:50px;
+    height:45px;
+    position: absolute;
+    left: 41%;
+    top: -64px;
+}
+
+.reset button{
+    background-color: black;
+    border: none;
+    border-radius: 25%;
+}
+.reset img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    
+}
+.lap{
+    width:50px;
+    height:45px;
+    position: absolute;
+    left: -45px;
+    top:43px;
+}
+
+.lap button{
+    background-color: black;
+    border: none;
+    border-radius: 25%;
+}
+.lap img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+}
+.demo{
+    display:block;
+    width:350px;
+    height:350px;
+    overflow: hidden;
+    font-size: 40px;
+    color:white;
+}
+@media screen and (max-width:1200px) {
+    .time{
+        border: none;
+        width:350px;
+        height:350px;
+        background-color: grey;
+        border-radius: 0;
+    }
+    .start{
+        transform: rotate(90deg);
+        left: 17%;
+        top: 91.5%;
+    }
+    .stop{
+        transform: rotate(90deg);
+        top: 91.5%;
+        left: calc(17% + 55px);
+    }
+    .reset{
+        top: 92%;
+        left: calc(17% + 111px);
+    }
+    .reset button{
+        width:60px;
+        height:61px;
+    }
+    .lap{
+        top: 91%;
+        left: calc(17% + 200px);
+    }
+    .lap button{
+        width:60px;
+        height: 61px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .main{
+        display: block;
+    }
+    .time{
+        border: none;
+        width:100%;
+        background-color: grey;
+        border-radius: 0;
+    }
+    .display{
+        position: absolute;
+        top:25px;
+        left:75px;
+        font-size: 150px;
+    }
+    .display1{
+        position: absolute;
+        top:210px;
+        left:150px;
+        font-size:75px;
+    }
+ 
+
+
+    .reset button{
+        width:60px;
+        height:61px;
+        background-color: transparent;
+    }
+  
+    .lap button{
+        width:60px;
+        height: 61px;
+        background-color: transparent;
+    }
+    .demo{
+        position: absolute;
+        top:10px;
+        right:25px;
+    }
+    .start button{
+        background-color: transparent;
+    }
+    .stop button{
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:840px) {
+    .main{
+        display: block;
+    }
+    .time{
+        border: none;
+        width:100%;
+        background-color: grey;
+        border-radius: 0;
+    }
+    .display{
+        position: absolute;
+        top:25px;
+        left:75px;
+        font-size: 150px;
+    }
+    .display1{
+        position: absolute;
+        top:210px;
+        left:150px;
+        font-size:75px;
+    }
+    .start button{
+        background-color: transparent;
+    }
+
+    .stop button{
+        background-color: transparent;
+    }
+
+    .reset button{
+        width:60px;
+        height:61px;
+        background-color: transparent;
+    }
+   
+    .lap button{
+        width:60px;
+        height: 61px;
+        background-color: transparent;
+    }
+    .demo{
+        position: absolute;
+        top:10px;
+        right:25px;
+        
+    }
+}
+@media screen and (max-width:760px) {
+    .demo{
+        position: absolute;
+        top:10px;
+        right:25px;
+        font-size: larger;
+    }
+    .start button{
+        background-color: transparent;
+    }
+    .stop button{
+        background-color: transparent;
+    }
+    .reset button{
+        background-color: transparent;
+    }
+    .lap button{
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:740px) {
+    .main{
+        display: block;
+    }
+    body{
+       background-attachment: fixed;
+       background-position: bottom;
+    }
+    .time{
+        border: none;
+        width:100%;
+        background-color: black;
+        border-radius: 0;
+        color: white;
+        border-radius: 10%;
+        border: 5px solid;
+        width:100%;
+        max-width: 85%;
+        margin: 35px auto;
+        border-color: none;
+        border-color: rgb(36, 0, 70);
+        border-width: 6px;
+        box-shadow: 10px 10px 50px rgb(139, 35, 237);
+    }
+    .display{
+        position: absolute;
+        top:25px;
+        left:75px;
+        font-size:120px;
+    }
+    .display1{
+        top:210px;
+        left:150px;
+        font-size:75px;
+    }
+    
+    .start button{
+        background-color: transparent;
+    }
+    .stop button{
+        background-color: transparent;
+    }
+    .reset button{
+        width:60px;
+        height:61px;
+        background-color: transparent;
+    }
+    .lap button{
+        width:60px;
+        height: 61px;
+        background-color: transparent;
+    }
+    .demo{
+        top:450px;
+       left:10px;
+        font-size:30px;
+        width:150px;
+    }
+}   
